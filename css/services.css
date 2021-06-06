@@ -6,7 +6,7 @@
   font-weight: bold;
 }
 
-#services .orange{
+#services .orange {
   background: #f8f6dc;
 }
 
@@ -19,11 +19,15 @@
 }
 
 #services .service {
-    padding: 7em 1em;
-    margin: 1em;
+  padding: 7em 1em;
+  margin: 1em;
 }
 
 #services .wierd-ooo {
-    margin-top: 1em;
-    font-weight: bold;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+#services .col-md-4 {
+  position: relative;
 }
