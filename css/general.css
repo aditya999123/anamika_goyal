@@ -36,10 +36,18 @@
 }
 
 /* carousal */
-.btn-holder {
+.slick-arrow button {
   width: 52px;
   height: 52px;
   display: block;
+  color: #0c0c0c;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.42);
+  outline: transparent;
+}
+
+.slick-arrow button:hover {
+  background: white;
 }
 
 .slick-slider {

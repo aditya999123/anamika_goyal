@@ -7,10 +7,38 @@
   background: #feedcd;
 }
 
-#testimonials .review-wrapper {
+#testimonials .review-text {
   background: white;
   padding: 44px;
   font-weight: 300;
   border-radius: 24px;
   margin: 0 24px;
+}
+
+#testimonials .review-author {
+  padding: 44px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+#testimonials .review-author .review-author-profile-img {
+    display: flex;
+    justify-content: center;
+}
+
+#testimonials .review-author .review-author-profile-img img{
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+}
+
+#testimonials .review-author .review-author-name {
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+#testimonials .review-author .review-author-designation {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.35);
 }
