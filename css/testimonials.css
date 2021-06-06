@@ -1,8 +1,16 @@
 #testimonials {
-    background: #CFEAF0;
-    padding: 6em 0;
+  background: #cfeaf0;
+  padding: 6em 0;
 }
 
 #testimonials .cute-pill {
-    background: #FEEDCD;
+  background: #feedcd;
+}
+
+#testimonials .review-wrapper {
+  background: white;
+  padding: 44px;
+  font-weight: 300;
+  border-radius: 24px;
+  margin: 0 24px;
 }
