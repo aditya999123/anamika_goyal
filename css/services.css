@@ -1,0 +1,33 @@
+#services .sub-title {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+#services .service-title {
+  font-weight: bold;
+}
+
+#services .wierd-ooo {
+  font-weight: bold;
+}
+
+#services .orange{
+  background: #f8f6dc;
+}
+
+#services .green {
+  background: #e4ffe7;
+}
+
+#services .blue {
+  background: #eafdff;
+}
+
+#services .service {
+    padding: 5em 1em;
+    margin: 1em;
+}
+
+#services .wierd-ooo {
+    margin-top: 1em;
+    font-weight: bold;
+}
