@@ -1,0 +1,76 @@
+#contact {
+    padding: 7em 0;
+    background: #E1ECDE;
+    text-align: center;
+}
+
+#contact img {
+    width: 324px;
+}
+
+#contact .cute-pill {
+    background: #FFEECD;
+    margin-top: 1em;
+}
+
+#contact .credit-text {
+    color: grey;
+    font-size: 0.9em;
+}
+
+#contact .subscription-form {
+    margin-top: 3em;
+    transform: translate(50px);
+}
+
+#contact .subscription-form input {
+    outline: none;
+    border: none;
+    padding: 20px 24px;
+    border-radius: 12px;
+    width: 400px;
+}
+
+#contact .subscription-form button {
+    cursor: pointer;
+    background: #524E49;
+    outline: none;
+    border: none;
+    padding: 32px;
+    border-radius: 34px;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    transform: translate(-100px);
+}
+
+#contact .subscription-form button:hover {
+    background: black;
+    transition: all 150ms ease;
+}
+
+#contact .social-icons {
+    display: flex;
+    margin-top: 0.5em;
+    justify-content: center;
+}
+
+#contact .social-icon {
+    cursor: pointer;
+    margin: 0 2px;
+    height: 51px;
+    width: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: all 150ms ease;
+    color: #3C465D;
+    border-radius: 50%;
+}
+
+#contact .social-icon:hover {
+    background: #3C465D;
+    color: white;
+}
