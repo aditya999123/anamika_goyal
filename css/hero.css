@@ -1,36 +1,41 @@
 #hero {
+  background-color: black;
+  position: relative;
+}
+
+#hero .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   background: url("../assets/Canva-Smiling-Woman-Wearing-Spectacles-1920.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  position: relative;
-  padding-bottom: 200px;
-  min-height: 100vh;
+  background-position: unset;
+  top: 0;
+  left: 0;
 }
 
-#hero .container {
-  width: 100vw;
-}
-
-#hero .overlay {
+#hero .overlay-color {
   background-color: transparent;
   background-image: linear-gradient(90deg, #121e47 51%, rgba(0, 0, 0, 0) 70%);
   opacity: 0.76;
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
-#hero .text-wrapper{
-  background: transparent;
-  z-index: 100;
+#hero .container {
   color: white;
+  /* padding-bottom: 200px; */
 }
 
 #hero .pill {
   display: inline-block;
   padding: 0.75em 1.5em;
-  background: #595F75;
+  background: #595f75;
   border-radius: 0 2em 2em 2em;
   margin-top: 20vh;
   margin-bottom: 1em;
@@ -52,7 +57,7 @@
 }
 
 #hero .btn {
-  background: #50FEDC;
+  background: #50fedc;
   box-shadow: 7px 6px 21px 0px rgb(0 0 0 / 50%);
   padding: 1em 2em;
   color: black;
@@ -63,6 +68,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 15vh;
 }
 
 #hero .brand img {
@@ -71,14 +77,55 @@
   margin-bottom: 1em;
 }
 
-#hero .waves {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 150px;
-  width: 100%;
+#hero .waves svg{
   color: white;
   fill: white;
+  height: 75px;
+  width: 100%;
   transform: rotate(180deg) rotateY(180deg);
-  zoom: 1;
+}
+
+#hero .waves{
+  height: 75px;
+}
+
+@media (max-width: 1200px) {
+  #hero .title {
+    font-size: 2.5em;
+  }
+
+  #hero .pill {
+    font-size: 0.9em;
+    margin-top: 80px;
+  }
+
+  #hero .sub-title {
+    font-size: 0.9em;
+  }
+
+  #hero .btn {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 775px) {
+  #hero .overlay {
+    background-position: center;
+  }
+
+  #hero .title {
+    font-size: 2em;
+  }
+
+  #hero .pill {
+    font-size: 0.8em;
+  }
+
+  #hero .sub-title {
+    font-size: 0.8em;
+  }
+
+  #hero .btn {
+    font-size: 0.8em;
+  }
 }
