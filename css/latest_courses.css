@@ -1,0 +1,43 @@
+#latest-courses {
+  padding: 5em 0;
+}
+
+#latest-courses .course-wrapper {
+  margin: 0 20px;
+}
+
+#latest-courses .course-poster-wrapper img {
+  border-radius: 26px;
+  width: 100%;
+}
+
+#latest-courses .course-name {
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+#latest-courses .course-date {
+  font-weight: 500;
+  color: grey;
+  font-size: 0.9em;
+  margin-top: 0.25em;
+}
+
+#latest-courses .all-courses {
+  padding: 24px 36px;
+  font-weight: 300;
+  border-radius: 12px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 2em;
+  background: #ffe4aa;
+}
+
+#latest-courses .slick-arrow button {
+  background: #f2f3f4;
+}
+
+#latest-courses .slick-arrow button:hover {
+  background: rgb(216, 216, 216);
+}

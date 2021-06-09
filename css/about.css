@@ -1,0 +1,36 @@
+#about {
+    margin: 10em 0;
+}
+
+#about .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+#about .profile-img-wrapper {
+    position: relative;
+}
+
+#about .profile-img-wrapper img {
+    border-radius: 50%;
+}
+
+#about .profile-img-caption{
+    background: #2E53FF;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 27px;
+    border-radius: 52px;
+    text-align: center;
+    left: 50%;
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.65);
+    transform: translate(-50%,50%);
+}
+
+#about .profile-img-caption .highlight-year {
+    font-weight: 700;
+    color: white;
+    font-size: 2em;
+}

@@ -1,0 +1,45 @@
+#self-dev {
+  position: relative;
+  background: url("../assets/women-forward-big.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#self-dev .main-content {
+  text-align: center;
+  padding: 10em 0;
+  background: rgba(68, 71, 69, 0.6);
+}
+
+#self-dev .start-btn {
+  padding: 24px 36px;
+  font-weight: 300;
+  border-radius: 12px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 2em;
+  background: #f4da58;
+}
+
+#self-dev .sub-title {
+  color: #fff24f;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+#self-dev .title {
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1em;
+  color: white;
+  text-shadow: 2px 3px 10px rgb(0 0 0 / 83%);
+}
+
+#self-dev .text {
+  color: #eee;
+  letter-spacing: 1px;
+  margin-top: 1em;
+}
