@@ -31,3 +31,9 @@
 #services .col-md-4 {
   position: relative;
 }
+
+@media (max-width: 1200px) {
+  #services .service {
+    padding: 3em 1em;
+  }
+}

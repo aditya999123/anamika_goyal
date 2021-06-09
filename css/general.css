@@ -35,6 +35,13 @@
   color: rgba(0, 0, 0, 0.35);
 }
 
+/* responsiveness */
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 2em;
+  }
+}
+
 /* carousal */
 .slick-arrow button {
   width: 52px;
