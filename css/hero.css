@@ -81,7 +81,7 @@
   fill: white;
   height: 75px;
   width: 100%;
-  transform: rotate(180deg) rotateY(180deg);
+  transform: rotate(180deg) rotateY(180deg) translateY(-2px);
 }
 
 #hero .waves {
