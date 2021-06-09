@@ -19,7 +19,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 775px) {
+@media (max-width: 767px) {
   #numbers .number-value {
     font-size: 2em;
   }
