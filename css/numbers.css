@@ -8,13 +8,23 @@
   text-align: center;
 }
 
-#numbers .number-value{
-    font-weight: 100;
-    font-size: 3.5em;
+#numbers .number-value {
+  font-weight: 100;
+  font-size: 3.5em;
 }
 
 #numbers .number-label {
-    letter-spacing: 3px;
-    font-size: 0.9em;
-    font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+@media (max-width: 775px) {
+  #numbers .number-value {
+    font-size: 2em;
+  }
+
+  #numbers .number-label {
+    font-size: 0.8em;
+  }
 }
