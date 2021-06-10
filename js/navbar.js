@@ -1,14 +1,17 @@
-var navbar = document.querySelector('#big-nav');
+var bigNav = document.querySelector('#big-nav');
+var mobNav = document.querySelector('#mob-nav');
 var prev = 0;
-console.log(navbar)
+console.log(bigNav, mobNav)
 
 document.addEventListener('scroll', (event) => {
     if (prev > 0 && window.pageYOffset > 0) {
         return;
     } else if (window.pageYOffset === 0) {
-        navbar.classList.remove('white-nav');
+        bigNav.classList.remove('white-nav');
+        mobNav.classList.remove('white-nav');
     } else {
-        navbar.classList.add('white-nav');
+        bigNav.classList.add('white-nav');
+        mobNav.classList.add('white-nav');
     }
     prev = window.pageYOffset;
 });
