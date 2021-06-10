@@ -58,6 +58,7 @@
   display: flex;
   align-items: center;
   border-left: 1px solid #a4a4a4;
+  /* border-left: 1px solid rgba(135, 135, 135, 0.2); */
 }
 
 #big-nav .link-text {
@@ -94,7 +95,7 @@
 #big-nav.white-nav {
   background: white;
   height: 65px;
-  border-bottom: 1px solid #a4a4a4;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
 }
 
 #big-nav.white-nav .link-text {
@@ -103,4 +104,15 @@
 
 #big-nav.white-nav .social-icon {
   color: black;
+}
+
+#big-nav.white-nav .nav-link {
+  border-left: 1px solid rgba(135, 135, 135, 0.2);
+  /* background: #878787; */
+}
+
+@media (max-width: 1100px) {
+  #big-nav {
+    display: none;
+  }
 }

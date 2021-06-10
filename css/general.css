@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .heading {
@@ -108,7 +111,7 @@
     z-index: 50;
     background: rgba(89, 89, 89, 0.234);
   }
-  
+
   .slick-arrow .left-btn {
     transform: translateX(-15px);
     border-radius: 0 18px 18px 0;
@@ -120,5 +123,4 @@
     border-radius: 18px 0 0 18px;
     right: 0;
   }
-
 }
