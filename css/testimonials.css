@@ -22,23 +22,41 @@
 }
 
 #testimonials .review-author .review-author-profile-img {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-#testimonials .review-author .review-author-profile-img img{
+#testimonials .review-author .review-author-profile-img img {
   width: 94px;
   height: 94px;
   border-radius: 50%;
 }
 
 #testimonials .review-author .review-author-name {
-    font-weight: 700;
-    margin-top: 5px;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
 #testimonials .review-author .review-author-designation {
-    font-size: 0.9em;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.35);
+  font-size: 0.9em;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 767px) {
+  #testimonials {
+    padding: 3em 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #testimonials .review-text {
+    margin: 0 5px;
+    padding: 22px;
+  }
+
+  #testimonials .review-author {
+    padding: 22px;
+    padding-bottom: 0;
+  }
 }
