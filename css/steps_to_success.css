@@ -53,7 +53,7 @@
   height: 64px;
   width: 64px;
   border-radius: 50%;
-  background: #DCD7CD;
+  background: #dcd7cd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@
   display: block;
   position: absolute;
   height: calc(50% - 10px);
-  background: #DCD7CD;
+  background: #dcd7cd;
   width: 3px;
   transform: translateY(calc(-50% - 10px));
 }
@@ -78,7 +78,27 @@
   display: block;
   position: absolute;
   height: calc(50% - 10px);
-  background: #DCD7CD;
+  background: #dcd7cd;
   width: 3px;
   transform: translateY(calc(50% + 10px));
+}
+
+@media (max-width: 767px) {
+  #steps-to-success {
+    padding: 3em 0;
+  }
+
+  #steps-to-success .ready-to-start-wrapper {
+    position: inherit;
+    bottom: 0;
+    margin: 3em 0;
+  }
+
+  #steps-to-success .step {
+    margin-left: 0;
+  }
+
+  #steps-to-success .number-circle {
+    margin-right: 15px;
+  }
 }

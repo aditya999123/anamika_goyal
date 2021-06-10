@@ -34,16 +34,18 @@
   background: #ffe4aa;
 }
 
-#latest-courses .slick-arrow button {
-  background: #f2f3f4;
-}
-
-#latest-courses .slick-arrow button:hover {
-  background: rgb(216, 216, 216);
-}
-
 @media (max-width: 767px) {
   #latest-courses {
     padding: 3em 0;
+  }
+}
+
+@media (min-width: 577px) {
+  #latest-courses .slick-arrow button {
+    background: #f2f3f4;
+  }
+
+  #latest-courses .slick-arrow button:hover {
+    background: rgb(216, 216, 216);
   }
 }
