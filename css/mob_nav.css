@@ -1,12 +1,9 @@
 #mob-nav {
-  /* box-shadow: 0 6px 15px 0 rgb(17 17 17 / 12%);
-  color: white; */
 }
 
 #mob-nav .main-wrapper {
   display: flex;
   align-items: center;
-  padding: 0 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,8 +13,8 @@
   color: white;
   font-size: 1.5em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  transition: 300ms ease-out;
   box-shadow: 0 6px 15px 0 rgb(17 17 17 / 12%);
+  transition: all 300ms ease;
 }
 
 #mob-nav .sheet-wrapper {
@@ -29,6 +26,7 @@
   left: 0;
   z-index: 100;
   padding: 40px;
+  transition: all 300ms ease;
 }
 
 #mob-nav .sheet-wrapper .nav-link {
@@ -54,17 +52,50 @@
   font-weight: 700;
 }
 
-#mob-nav .sheet-wrapper.hide {
+#mob-nav .nav-toggler {
+  height: inherit;
+  width: 70px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+/* nav toggle */
+#mob-nav .sheet-wrapper {
   display: none;
 }
 
+#mob-nav.show-nav .sheet-wrapper {
+  display: block;
+}
+
+#mob-nav .nav-opener {
+  display: block;
+}
+
+#mob-nav.show-nav .nav-opener {
+  display: none;
+}
+
+#mob-nav .nav-closer {
+  display: none;
+}
+
+#mob-nav.show-nav .nav-closer {
+  display: block;
+}
+
 /* white nav */
-/* #mob-nav.white-nav {
+#mob-nav.white-nav .main-wrapper{
   color: black;
   background: white;
   border-bottom: 1px solid rgba(135, 135, 135, 0.2);
-} */
+}
 
+/* responsive */
 @media (min-width: 1101px) {
   #mob-nav {
     display: none;
