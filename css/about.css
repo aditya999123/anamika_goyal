@@ -13,6 +13,7 @@
 
 #about .profile-img-wrapper img {
     border-radius: 50%;
+    width: 100%;
 }
 
 #about .profile-img-caption{
@@ -33,4 +34,20 @@
     font-weight: 700;
     color: white;
     font-size: 2em;
+}
+
+@media (max-width: 1200px) {
+    #about {
+        margin: 5em 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #about {
+        margin: 5em 0;
+    }
+
+    #about .profile-img-wrapper {
+        margin: 3em 0 1em;
+    }
 }

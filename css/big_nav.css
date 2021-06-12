@@ -1,0 +1,124 @@
+#big-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  transition: 300ms ease-out;
+  box-shadow: 0 6px 15px 0 rgb(17 17 17 / 12%);
+}
+
+#big-nav .black-signature {
+  display: none;
+}
+
+#big-nav .container {
+  height: inherit;
+}
+
+#big-nav .nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+#big-nav .signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  margin-right: 0.5em;
+  font-weight: 900;
+  color: white;
+}
+
+#big-nav .left-wrapper {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#big-nav .right-wrapper {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#big-nav .social-icon {
+  font-size: 1.25em;
+  margin-right: 8px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.795);
+}
+
+#big-nav .nav-link {
+  cursor: pointer;
+  position: relative;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #a4a4a4;
+}
+
+#big-nav .link-text {
+  color: white;
+  font-weight: 500;
+}
+
+#big-nav .nav-link.active {
+  background: #ff2660;
+}
+
+#big-nav .active .link-text {
+  font-weight: bold;
+}
+
+#big-nav .nav-link.active::after {
+  display: block;
+  content: "";
+  background: #ff2660;
+  height: 27px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 25px);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 15px), 0 100%);
+}
+
+/* white nav */
+#big-nav.white-nav .signature {
+  color: black;
+}
+
+#big-nav.white-nav {
+  background: white;
+  height: 65px;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+}
+
+#big-nav.white-nav .link-text {
+  color: black;
+}
+
+#big-nav.white-nav .social-icon {
+  color: black;
+}
+
+#big-nav.white-nav .active .link-text {
+  color: white;
+}
+
+#big-nav.white-nav .nav-link {
+  border-left: 1px solid rgba(135, 135, 135, 0.2);
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  #big-nav {
+    display: none;
+  }
+}

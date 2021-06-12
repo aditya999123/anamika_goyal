@@ -1,38 +1,49 @@
 #hero {
-  background: url("../assets/Canva-Smiling-Woman-Wearing-Spectacles-1920.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: black;
   position: relative;
-  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-}
-
-#hero .container {
-  width: 100vw;
+  justify-content: center;
 }
 
 #hero .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../assets/Canva-Smiling-Woman-Wearing-Spectacles-1920.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: unset;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#hero .overlay-color {
   background-color: transparent;
   background-image: linear-gradient(90deg, #121e47 51%, rgba(0, 0, 0, 0) 70%);
   opacity: 0.76;
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
-#hero .text-wrapper{
-  background: transparent;
-  z-index: 100;
+#hero .container {
   color: white;
 }
 
 #hero .pill {
   display: inline-block;
   padding: 0.75em 1.5em;
-  background: #595F75;
+  background: #595f75;
   border-radius: 0 2em 2em 2em;
-  margin-top: 20vh;
+  margin-top: 150px;
   margin-bottom: 1em;
   font-size: 1em;
   font-weight: 500;
@@ -52,7 +63,7 @@
 }
 
 #hero .btn {
-  background: #50FEDC;
+  background: #50fedc;
   box-shadow: 7px 6px 21px 0px rgb(0 0 0 / 50%);
   padding: 1em 2em;
   color: black;
@@ -63,6 +74,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 #hero .brand img {
@@ -71,14 +83,79 @@
   margin-bottom: 1em;
 }
 
-#hero .waves {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 150px;
-  width: 100%;
+#hero .waves svg {
   color: white;
   fill: white;
-  transform: rotate(180deg) rotateY(180deg);
-  zoom: 1;
+  height: 75px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg) rotateY(180deg) translateY(-2px);
+}
+
+@media (max-width: 1000px) {
+  #hero .title {
+    font-size: 2.5em;
+  }
+
+  #hero .pill {
+    margin-top: 100px;
+    font-size: 0.9em;
+  }
+
+  #hero .sub-title {
+    font-size: 0.9em;
+  }
+
+  #hero .btn {
+    font-size: 0.9em;
+  }
+
+  #hero .waves svg {
+    height: 50px;
+  }
+
+  #hero .brands {
+    margin-bottom: 75px;
+  }
+
+  #hero .overlay-color {
+    background-image: linear-gradient(
+      90deg,
+      #121e47 25%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+@media (max-width: 767px) {
+  #hero .overlay {
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  #hero .pill {
+    font-size: 0.8em;
+  }
+
+  #hero .sub-title {
+    font-size: 0.8em;
+  }
+
+  #hero .btn {
+    font-size: 0.8em;
+  }
+
+  #hero .brand img {
+    width: 5em;
+  }
+
+  #hero .overlay-color {
+    background-image: linear-gradient(
+      90deg,
+      #121e47 25%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 }

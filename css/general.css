@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .heading {
@@ -83,4 +86,41 @@
 
 .slick-dots li.slick-active {
   background: #000;
+}
+
+/* responsiveness */
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 576px) {
+  .slick-dots {
+    margin-top: 0;
+  }
+
+  .carousel-wrapper {
+    position: relative;
+  }
+
+  .slick-arrow button,
+  .slick-arrow button:hover {
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+    background: rgba(89, 89, 89, 0.234);
+  }
+
+  .slick-arrow .left-btn {
+    transform: translateX(-15px);
+    border-radius: 0 18px 18px 0;
+    left: 0;
+  }
+
+  .slick-arrow .right-btn {
+    transform: translateX(15px);
+    border-radius: 18px 0 0 18px;
+    right: 0;
+  }
 }

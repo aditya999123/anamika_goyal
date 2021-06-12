@@ -1,76 +1,104 @@
 #contact {
-    padding: 7em 0;
-    background: #E1ECDE;
-    text-align: center;
+  padding: 7em 0;
+  background: #e1ecde;
+  text-align: center;
 }
 
 #contact img {
-    width: 324px;
+  width: 324px;
+  max-width: 100%;
 }
 
 #contact .cute-pill {
-    background: #FFEECD;
-    margin-top: 1em;
+  background: #ffeecd;
+  margin-top: 1em;
 }
 
 #contact .credit-text {
-    color: grey;
-    font-size: 0.9em;
+  color: grey;
+  font-size: 0.9em;
 }
 
 #contact .subscription-form {
-    margin-top: 3em;
-    transform: translate(50px);
+  margin-top: 3em;
+  transform: translate(50px);
 }
 
 #contact .subscription-form input {
-    outline: none;
-    border: none;
-    padding: 20px 24px;
-    border-radius: 12px;
-    width: 400px;
+  outline: none;
+  border: none;
+  padding: 20px 24px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 95vw;
 }
 
 #contact .subscription-form button {
-    cursor: pointer;
-    background: #524E49;
-    outline: none;
-    border: none;
-    padding: 32px;
-    border-radius: 34px;
-    font-size: 0.8em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: white;
-    transform: translate(-100px);
+  cursor: pointer;
+  background: #524e49;
+  outline: none;
+  border: none;
+  padding: 32px;
+  border-radius: 34px;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  transform: translate(-100px);
 }
 
 #contact .subscription-form button:hover {
-    background: black;
-    transition: all 150ms ease;
+  background: black;
+  transition: all 150ms ease;
 }
 
 #contact .social-icons {
-    display: flex;
-    margin-top: 0.5em;
-    justify-content: center;
+  display: flex;
+  margin-top: 0.5em;
+  justify-content: center;
 }
 
 #contact .social-icon {
-    cursor: pointer;
-    margin: 0 2px;
-    height: 51px;
-    width: 51px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    transition: all 150ms ease;
-    color: #3C465D;
-    border-radius: 50%;
+  cursor: pointer;
+  margin: 0 2px;
+  height: 51px;
+  width: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transition: all 150ms ease;
+  color: #3c465d;
+  border-radius: 50%;
 }
 
 #contact .social-icon:hover {
-    background: #3C465D;
-    color: white;
+  background: #3c465d;
+  color: white;
+}
+
+@media (max-width: 767px) {
+    #contact .subscription-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: none;
+    }
+    
+    #contact .subscription-form input {
+        padding: 15px 18px;
+    }
+    
+    #contact .subscription-form button {
+        padding: 18px 24px;
+        margin: 1em 0 2em;
+        transform: none;
+    }
+}
+
+@media (max-width: 576px) {
+  #contact {
+      padding: 3em 0;
+  }
 }

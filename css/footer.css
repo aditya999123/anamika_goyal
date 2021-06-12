@@ -1,18 +1,31 @@
 footer .social-pics {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer .social-pic {
-    width: calc(100% * (1/12));
+  width: calc(100% * (1 / 12));
 }
 
 footer .social-pic img {
-    width: 100%;
+  width: 100%;
 }
 
 footer .rights {
-    text-align: center;
-    padding: 22px 0;
-    font-weight: 300;
-    font-size: 0.9;
+  text-align: center;
+  padding: 22px 0;
+  font-weight: 300;
+  font-size: 0.9;
+}
+
+@media (max-width: 767px) {
+  footer .social-pic {
+    width: calc(100% * (1 / 6));
+  }
+}
+
+@media (max-width: 576px) {
+  footer .social-pic {
+    width: calc(100% * (1 / 4));
+  }
 }
